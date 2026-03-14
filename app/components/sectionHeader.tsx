@@ -20,7 +20,7 @@ export default function SectionHeader({
         </span>
       </div>
       <div className="flex justify-between w-full">
-        <div className="max-w-115 w-full">
+        <div className="max-w-120 w-full">
           <h2 className="w-full leading-[1.1px] font-semibold text-[44px] txt-heading">
             {title}
           </h2>

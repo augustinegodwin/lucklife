@@ -2,7 +2,10 @@ import Image from "next/image";
 import Hero from "./components/Sections/hero";
 import Value from "./components/Sections/value";
 import Products from "./components/Sections/products";
-Hero
+import TextimonialSection from "./components/Sections/textimonialSection";
+import Gallery from "./components/Sections/gallery";
+import ContactUs from "./components/Sections/contactUs";
+import { Footer } from "./components/Sections/footer";
 export default function Home() {
   return (
     <main className="w-full flex flex-col items-center justify-between">
@@ -10,8 +13,11 @@ export default function Home() {
         <Hero/>
         <Value/>
         <Products/>
+        <TextimonialSection/>
+        <Gallery/>
+        <ContactUs/>
       </div>
-      
+      <Footer/>
     </main>
   );
 }
