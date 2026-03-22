@@ -47,5 +47,6 @@ body {
 }
 @theme {
   --breakpoint-md: 600px;   /* This is your min-width anchor */
+  --breakpoint-sm: 520px;   /* This is your min-width anchor */
   --breakpoint-lg: 1024px;  /* This is your next min-width anchor */
 }
