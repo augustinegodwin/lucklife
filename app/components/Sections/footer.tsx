@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer className="bg-white w-full pt-16 md:pt-24">
-      <div className="max-w-360 px-10 w-full  mx-auto">
+      <div className="max-w-180 lg:max-w-360 px-4 md:px-10 w-full  mx-auto">
         {/* Top Section: Logo, Quote, and Navigation */}
         <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-12 mb-20">
           {/* Left Section */}

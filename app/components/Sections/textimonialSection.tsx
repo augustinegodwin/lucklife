@@ -60,7 +60,7 @@ import SectionHeader from '../sectionHeader'
 export default function TextimonialSection() {
   return (
     <section className='w-full flex justify-center pb-22.5'>
-        <div className='flex max-w-360 w-full flex-col px-10 gap-33'>
+        <div className='flex max-w-180 lg:max-w-360 w-full flex-col px-4 md:px-10 gap-33'>
             <SectionHeader 
                 label='TESTIMONIALS'
                 title='Stories of everyday people
@@ -68,7 +68,7 @@ who found comfort.'
                 description='Read authentic stories from people who simplified their path to wellness with our effective herbal formulas.'
                 buttonValue='Join the story'
             />
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 {
                     testimonials.map((testimonial) => (
                         <ReviewsCard key={testimonial.id} testimonial={testimonial} />

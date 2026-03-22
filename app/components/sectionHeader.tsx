@@ -21,7 +21,7 @@ export default function SectionHeader({
       </div>
       <div className="flex gap-10 flex-col lg:flex-row justify-between w-full">
         <div className="max-w-120 w-full">
-          <h2 className="w-full leading-[1.1px] font-semibold text-[44px] txt-heading">
+          <h2 className="w-full leading-[1.1px] font-semibold text-[36px] md:text-[44px] txt-heading">
             {title}
           </h2>
         </div>
