@@ -2,10 +2,12 @@ import { productsdata } from "@/data"
 import SectionHeader from "../components/sectionHeader"
 import Products from "../components/Sections/products"
 import ProductCard from "../components/productCard"
+import { Footer } from "../components/Sections/footer"
 
 export default function ProductsPage() {
   return (
-    <div className="w-full pt-40">
+    <>
+      <div className="w-full pt-40">
         <section className='w-full flex justify-center pb-22.5'>
                 <div className='flex max-w-360 w-full flex-col px-4 md:px-10 gap-33'>
                     <SectionHeader label='PRODUCTS'  title='Precision natural medicine for a healthier you' description='Discover high-quality herbal supplements and natural drugs meticulously selected to support your holistic wellness journey today.'/>
@@ -17,5 +19,7 @@ export default function ProductsPage() {
         </div>
     </section>
     </div>
+    <Footer/>
+    </>
   )
 }

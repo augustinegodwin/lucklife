@@ -9,7 +9,7 @@ import sanbao from './app/assets/images/sanbao.png'
 import sanqing from './app/assets/images/sanqing.jpg'
 import toothpaste from './app/assets/images/toothpaste.png'
 import toothPaste2 from './app/assets/images/toothpaste_2.png'
-import xueqingfu from './app/assets/images/xueqingfu.jpg'
+import xueqingfu from './app/assets/images/xueqingfu.png'
 import coffee from './app/assets/images/coffee.png'
 export const productsdata: any = [
   {

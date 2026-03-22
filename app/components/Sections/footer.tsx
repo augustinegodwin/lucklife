@@ -20,7 +20,7 @@ export function Footer() {
           </div>
 
           {/* Right Section: Navigation */}
-          <div className="flex-1 grid grid-cols-3 gap-12">
+          <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-12">
             {/* Column 1 */}
             <div>
               <h4 className="font-medium! txt-heading text-black text-base mb-4">
