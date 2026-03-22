@@ -7,48 +7,6 @@ interface Product {
   description: string;
   image: string;
 }
-const product: Product = {
-  id: "1",
-  name: "Movement Plus",
-  description:
-    "Embrace a complete approach to wellness with natural solutions that nourish your mind, body, and spirit.Embrace a complete approach to wellness with natural solutions.",
-  image:
-    "https://framerusercontent.com/images/ISQ6TXtqJcBDntNlh85y8ttwOUM.png?width=600&height=600",
-};
-const products: Product[] = [
-  {
-    id: "1",
-    name: "Movement Plus",
-    description:
-      "Embrace a complete approach to wellness with natural solutions that nourish your mind, body, and spirit.",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/movement-plus-MYxZ1vC2K3pQ9wRs4tUvW5xYzAbCdE.png",
-  },
-  {
-    id: "2",
-    name: "Salvia Extract Tablet",
-    description:
-      "Embrace a complete approach to wellness with natural solutions that nourish your mind, body, and spirit.",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/salvia-extract-FgHiJkLmNoPqRs1tUvWxYzAbCdEfGhI.png",
-  },
-  {
-    id: "3",
-    name: "Lucklife Toothpaste",
-    description:
-      "Embrace a complete approach to wellness with natural solutions that nourish your mind, body, and spirit.",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/toothpaste-1-JkLmNoPqRsTuVwXyZaBcDeFgHiJkLmN.png",
-  },
-  {
-    id: "4",
-    name: "Lucklife Toothpaste",
-    description:
-      "Embrace a complete approach to wellness with natural solutions that nourish your mind, body, and spirit.",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/toothpaste-2-OpQrStUvWxYzAbCdEfGhIjKlMnOpQrS.png",
-  },
-];
 export default function ProductCard({ product }: { product: Product }) {
   return (
     <div
@@ -78,7 +36,7 @@ export default function ProductCard({ product }: { product: Product }) {
           <div className="flex-1 flex items-center justify-center size-full">
             <div className="relative aspect-square sm:aspect-auto size-full">
               <Image
-                src={productImage}
+                src={product.image}
                 alt={product.name}
                 fill
                 className="object-contain sm:scale-[1.5]"
