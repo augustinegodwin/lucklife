@@ -42,7 +42,7 @@ export default function Products() {
     <section className='w-full flex justify-center pb-22.5'>
         <div className='flex max-w-360 w-full flex-col px-10 gap-33'>
             <SectionHeader label='PRODUCTS' buttonValue="View all products" title='Precision natural medicine for a healthier you' description='Discover high-quality herbal supplements and natural drugs meticulously selected to support your holistic wellness journey today.'/>
-            <div className='grid grid-cols-1 md:grid-cols-2  gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-3  gap-5'>
                 {products.map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}

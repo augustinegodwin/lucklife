@@ -7,9 +7,7 @@ export default function ContactGrid() {
         <div className="flex-1 rounded-[25px] overflow-hidden bg-gray-200">
             <GoogleMap/>
         </div>
-        <div className="flex-1 ">
-            
-        </div>
+        
     </div>
   )
 }

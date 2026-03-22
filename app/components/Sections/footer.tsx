@@ -1,7 +1,7 @@
 export function Footer() {
   return (
-    <footer className="bg-white w-full px-6 md:px-12 lg:px-16 pt-16 md:pt-24">
-      <div className="max-w-360 w-full mx-auto">
+    <footer className="bg-white w-full pt-16 md:pt-24">
+      <div className="max-w-360 px-10 w-full  mx-auto">
         {/* Top Section: Logo, Quote, and Navigation */}
         <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-12 mb-20">
           {/* Left Section */}
@@ -23,96 +23,89 @@ export function Footer() {
           <div className="flex-1 grid grid-cols-3 gap-12">
             {/* Column 1 */}
             <div>
-              <h4 className="font-semibold txt-heading text-black text-sm mb-4">
-                Our Products
+              <h4 className="font-medium! txt-heading text-black text-base mb-4">
+                Pages
               </h4>
               <ul className="space-y-3">
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 text-sm hover:text-black transition"
+                    className="text-gray-600 text-body flow text-sm hover:text-black transition"
                   >
-                    All Products
+                    Home
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 text-sm hover:text-black transition"
+                    className="text-gray-600 text-sm text-body flow hover:text-black transition"
                   >
-                    Featured
+                    Products
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 text-sm hover:text-black transition"
+                    className="text-gray-600 text-body flow text-sm hover:text-black transition"
                   >
-                    New Arrivals
+                    404
                   </a>
                 </li>
               </ul>
             </div>
-
             {/* Column 2 */}
             <div>
-              <h4 className="font-semibold text-black text-sm mb-4">
-                Our Products
+              <h4 className="font-medium! txt-heading text-black text-base mb-4">
+                Social Links
               </h4>
               <ul className="space-y-3">
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 text-sm hover:text-black transition"
+                    className="text-gray-600 text-body flow text-sm hover:text-black transition"
                   >
-                    All Products
+                    Instagram
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 text-sm hover:text-black transition"
+                    className="text-gray-600 text-sm text-body flow hover:text-black transition"
                   >
-                    Featured
+                    Facebook
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 text-sm hover:text-black transition"
+                    className="text-gray-600 text-body flow text-sm hover:text-black transition"
                   >
-                    New Arrivals
+                    Whatsapp
                   </a>
                 </li>
               </ul>
             </div>
-
             {/* Column 3 */}
             <div>
-              <h4 className="font-semibold text-black text-sm mb-4">Learn</h4>
+              <h4 className="font-medium! txt-heading text-black text-base mb-4">
+                Contact
+              </h4>
               <ul className="space-y-3">
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 text-sm hover:text-black transition"
+                    className="text-gray-600 text-body flow text-sm hover:text-black transition"
                   >
-                    About Us
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                   </a>
                 </li>
+               
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 text-sm hover:text-black transition"
+                    className="text-gray-600 text-body flow text-sm hover:text-black transition"
                   >
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-600 text-sm hover:text-black transition"
-                  >
-                    Blog
+                    Support@gmail.com
                   </a>
                 </li>
               </ul>
@@ -125,7 +118,7 @@ export function Footer() {
 
         {/* Large Responsive Text */}
         <div className="overflow-hidden w-full">
-          <h1 className="text-[32vw] font-[1000] text-gray-200! txt-heading">
+          <h1 className="text-[30vw] font-[1000] text-gray-200! txt-heading">
             lucklife
           </h1>
         </div>

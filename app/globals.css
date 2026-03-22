@@ -38,5 +38,10 @@ body {
   @apply font-semibold tracking-[-0.04em] leading-[1.4] font-sans;
 }
 .flow{
-  font-family: flow-circular !important;
+  font-family: flow
+}
+
+@theme {
+  --breakpoint-md: 768px;   /* This is your min-width anchor */
+  --breakpoint-lg: 1024px;  /* This is your next min-width anchor */
 }

@@ -68,7 +68,7 @@ who found comfort.'
                 description='Read authentic stories from people who simplified their path to wellness with our effective herbal formulas.'
                 buttonValue='Join the story'
             />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
                 {
                     testimonials.map((testimonial) => (
                         <ReviewsCard key={testimonial.id} testimonial={testimonial} />

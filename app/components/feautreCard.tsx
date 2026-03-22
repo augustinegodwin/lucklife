@@ -13,7 +13,7 @@ export default function FeautreCard({ feature }: { feature: features }) {
         <Image src={feature.icon} alt={feature.title} width={48} height={48} />
       </div>
       <h3 className="txt-heading text-[22px] !font-medium">{feature.title}</h3>
-      <p className="text-lg text-(--text-light) flow leading-[1.4]">
+      <p className="text-lg text-(--text-light) text-body flow leading-[1.4]">
         {feature.description}
       </p>
     </div>
