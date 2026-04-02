@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import localFont from 'next/font/local';
+import { Footer } from "./components/Sections/footer";
 
 const recoleta = localFont({
   src: '../public/fonts/recoleta/Recoleta.otf', // Path is relative to the font file where the font loader is called
@@ -32,10 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${recoleta.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.className} ${recoleta.variable} ${geistMono.variable} antialiased `}
       >
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

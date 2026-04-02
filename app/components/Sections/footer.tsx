@@ -12,7 +12,7 @@ export function Footer() {
                 <div className="size-10 rounded-2xl bg-gray-200"></div>
             </div>
             <p className="text-base md:text-lg text-gray-700 max-w-xs text-body  mb-8">
-              "The Aura Lamp changed how my living room feels. Simple, stylish.
+              "Promoting health, Preserving culture Benefiting lifes.
             </p>
             <button className="bg-black text-body text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-900 transition">
               Purchase now
@@ -29,7 +29,7 @@ export function Footer() {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="#"
+                    href="/#"
                     className="text-gray-600 text-body flow text-sm hover:text-black transition"
                   >
                     Home
@@ -37,7 +37,7 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/products"
                     className="text-gray-600 text-sm text-body flow hover:text-black transition"
                   >
                     Products
@@ -45,7 +45,7 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/404"
                     className="text-gray-600 text-body flow text-sm hover:text-black transition"
                   >
                     404
@@ -61,7 +61,7 @@ export function Footer() {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="#"
+                    href="https://www.instagram.com"
                     className="text-gray-600 text-body flow text-sm hover:text-black transition"
                   >
                     Instagram
@@ -69,7 +69,7 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://www.facebook.com"
                     className="text-gray-600 text-sm text-body flow hover:text-black transition"
                   >
                     Facebook
@@ -77,7 +77,7 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://wa.me/your-number"
                     className="text-gray-600 text-body flow text-sm hover:text-black transition"
                   >
                     Whatsapp
@@ -105,7 +105,7 @@ export function Footer() {
                     href="#"
                     className="text-gray-600 text-body flow text-sm hover:text-black transition"
                   >
-                    Support@gmail.com
+                    lucklife@gmail.com
                   </a>
                 </li>
               </ul>

@@ -5,17 +5,19 @@ type Props = {
   description: string;
   label: string;
   buttonValue?: string;
+  action:string
 };
 export default function SectionHeader({
   title,
   description,
   label,
   buttonValue,
+  action
 }: Props) {
   return (
     <div className="w-full flex flex-col gap-2.5">
       <div>
-        <span className="uppercase text-sm text-bold flow text-green-700 font-bold">
+        <span className="uppercase text-sm  flow text-green-700">
           {label}
         </span>
       </div>
@@ -29,7 +31,7 @@ export default function SectionHeader({
           <p className="flow w-full text-body text-lg text-gray-600">
             {description}
           </p>
-          {buttonValue && <Button value={buttonValue} />}
+          {buttonValue && <Button action={action} value={buttonValue} />}
         </div>
       </div>
     </div>

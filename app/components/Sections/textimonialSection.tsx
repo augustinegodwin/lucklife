@@ -31,25 +31,25 @@ const testimonials: Testimonial[] = [
     role: 'Wellness Coach',
   },
   {
-    id: '1',
+    id: '5',
     quote: 'I found natural relief from stress after starting their herbal supplements. Highly recommend!',
     author: 'Emily K.',
     role: 'Customer',
   },
   {
-    id: '2',
+    id: '6',
     quote: 'I found natural relief from stress after starting their herbal supplements. Highly recommend!',
     author: 'Raj S.',
     role: 'Repeat Buyer',
   },
   {
-    id: '3',
+    id: '7',
     quote: 'I found natural relief from stress after starting their herbal supplements. Highly recommend!',
     author: 'Raj S.',
     role: 'Repeat Buyer',
   },
   {
-    id: '4',
+    id: '8',
     quote: 'I found natural relief from stress after starting their herbal supplements. Highly recommend!',
     author: 'Linda T.',
     role: 'Wellness Coach',
@@ -67,6 +67,7 @@ export default function TextimonialSection() {
 who found comfort.'
                 description='Read authentic stories from people who simplified their path to wellness with our effective herbal formulas.'
                 buttonValue='Join the story'
+                action='/products'
             />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 {

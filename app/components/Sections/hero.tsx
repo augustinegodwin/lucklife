@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Image from 'next/image';
+import heroImage from '../../assets/images/heroBg.avif'
 import Button from "../button";
 
 export default function Hero() {
@@ -21,11 +22,18 @@ export default function Hero() {
               Connect with top companies and explore roles suited to your skills
               and career goals.
             </p>
-            <Button value="Explore Products" />
+            <Button action="/products" value="Explore Products" />
           </div>
         </div>
         <div className="w-full p-[10px]">
-          <div className="bg-cover hero-img w-full h-125 rounded-[30px]"></div>
+          <div className="bg-cover hero-img w-full border border-gray-100 h-125 rounded-[30px]">
+            <Image              
+              src={heroImage}
+              alt="Hero Image"
+              sizes="100vw"
+              className="w-full  h-full object-cover rounded-[30px]"
+            />
+          </div>
         </div>
       </div>
     </section>

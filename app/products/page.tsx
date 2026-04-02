@@ -10,8 +10,8 @@ export default function ProductsPage() {
       <div className="w-full pt-40">
         <section className='w-full flex justify-center pb-22.5'>
                 <div className='flex max-w-360 w-full flex-col px-4 md:px-10 gap-33'>
-                    <SectionHeader label='PRODUCTS'  title='Precision natural medicine for a healthier you' description='Discover high-quality herbal supplements and natural drugs meticulously selected to support your holistic wellness journey today.'/>
-                    <div className='grid grid-cols-1 md:grid-cols-2  gap-5'>
+                    <SectionHeader label='PRODUCTS' action="" title='Precision natural medicine for a healthier you' description='Discover high-quality herbal supplements and natural drugs meticulously selected to support your holistic wellness journey today.'/>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-5'>
                       {productsdata.map((product:any) => (
                           <ProductCard key={product.id} product={product} />
                       ))}
@@ -19,7 +19,6 @@ export default function ProductsPage() {
         </div>
     </section>
     </div>
-    <Footer/>
     </>
   )
 }

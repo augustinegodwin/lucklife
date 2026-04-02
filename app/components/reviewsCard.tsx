@@ -13,7 +13,7 @@ export default function ReviewsCard({ testimonial }: { testimonial: Testimonial 
 
         {/* Author Info */}
         <div>
-          <p className="font-semibold text-gray-900 text-body text-sm">{testimonial.author}</p>
+          <p className=" text-gray-900 text-body text-sm">{testimonial.author}</p>
           <p className="text-gray-400 text-body text-[13px]">{testimonial.role}</p>
         </div>
       </div>

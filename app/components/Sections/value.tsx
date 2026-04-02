@@ -35,11 +35,11 @@ export default function Value() {
   return (
     <section className='w-full flex justify-center pb-22.5'>
         <div className='flex max-w-180 lg:max-w-360 w-full flex-col px-4 md:px-10 gap-33'>
-            <SectionHeader label='values' title='Why people rely on
+            <SectionHeader action='' label='values' title='Why people rely on
 lucklife for their wellbeing.' description='Discover top remote tech opportunities and land your next role with ease, through our streamlined process.'/>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                 {feautres.map((feature) => (
-                    <FeautreCard key={feature.id} feature={feature} />
+                    <FeautreCard key={feature.title} feature={feature} />
                 ))}
             </div>
         </div>

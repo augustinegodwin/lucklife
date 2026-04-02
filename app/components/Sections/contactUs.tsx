@@ -10,6 +10,7 @@ export default function ContactUs() {
                 label='Contact  Us'
                 title='Reach out for expert help with your wellness.'
                 description='Get in touch with our experts to learn how our safe, natural formulas can enhance your daily vitality'
+                action=''
             />
             <ContactGrid/>
         </div>
