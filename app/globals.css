@@ -17,11 +17,11 @@
 }
 @font-face {
   font-family: flow-circular;
-  src: url(../public/fonts/FlowCircular-Regular.ttf) format("truetype");
+  src: url(../app/assets/fonts/Pally-Medium.ttf);
 }
 @font-face {
   font-family: body-font;
-  src: url(../app/assets/fonts/Avengenz.ttf) format("truetype");
+  src: url(../public/fonts/recoleta/Recoleta.otf);
 }
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -36,15 +36,16 @@ body {
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 .txt-heading{
-  @apply  tracking-[-0.04em] leading-none text-black font-medium; 
+  @apply  tracking-[-0.02em] leading-none text-black font-bold; 
   font-family: body-font ;
+
 }
 .text-body {
-  @apply  tracking-[-0.01em] leading-[1.4] ; 
-  font-family: body-font;
+  @apply  tracking-[-0.04em] leading-[1.4] ; 
+  font-family:flow-circular;
 }
 .flow{
-  font-family: body-font;
+  font-family: flow-circular;
 }
 @theme {
   --breakpoint-md: 600px;   /* This is your min-width anchor */

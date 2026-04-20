@@ -10,7 +10,7 @@ interface Product {
 
 export default function Products() {
   return (
-    <section className="w-full flex justify-center pb-22.5">
+    <section  className="w-full flex justify-center pb-22.5">
       <div className="flex max-w-180 lg:max-w-360 w-full items-center flex-col px-4 md:px-10 gap-33">
         <SectionHeader
           label="PRODUCTS"

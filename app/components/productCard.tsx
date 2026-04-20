@@ -16,7 +16,7 @@ export default function ProductCard({ product }: { product: Product }) {
       <div className="p-5 sm:p-7.5 flex  flex-col-reverse h-full">
         <div className="flex-1 flex flex-col gap-5">
           <div>
-            <h3 className="text-2xl txt-heading font-serif font-medium! text-black mb-4">
+            <h3 className="text-2xl txt-heading font-serif font-semibold! text-black mb-4">
               {product.name}
             </h3>
             <p className="text-gray-600 text-body text-[17px] mb-4 leading-relaxed">

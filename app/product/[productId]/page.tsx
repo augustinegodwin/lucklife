@@ -8,7 +8,7 @@ type Props = {
 };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { productId } = await params;
-  const product = productsdata.find((p: any) => p.id === productId);
+  const product:Product = productsdata.find((p: any) => p.id === productId);
 
   if (!product) {
     return {
@@ -37,7 +37,7 @@ export default async function ProductData({ params }: Props) {
   const { productId } = await params;
 
   // 2. Find the specific product in your array
-  const product = productsdata.find((p: any) => p.id === productId);
+  const product:Product = productsdata.find((p: any) => p.id === productId);
   if (!product) {
     notFound();
   }
@@ -89,53 +89,50 @@ export default async function ProductData({ params }: Props) {
               </div>
 
               <div className="flex flex-col gap-4">
-                <span className="text-sm text-body">Description:</span>
-                <p className="text-gray-600 max-w-120 text-body">
+                <span className="text-base text-body">Description:</span>
+                <p className="text-gray-600 max-w-120 text-lg text-body">
                   {product.description}
                 </p>
-                <span className="text-sm text-body">Importance:</span>
+                <span className="text-base text-body">Importance:</span>
                 <ul className="list-disc list-inside flex flex-col gap-2 justify-center">
-                  <li className="text-gray-600 text-body">
-                    {" "}
-                    White tea, Qingquan willow, Xianchishe grape leaves, wire
-                    gorse.
-                  </li>
-                  <li className="text-gray-600 text-body">
-                    {" "}
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </li>
-                  <li className="text-gray-600 text-body">
-                    {" "}
-                    Modi molestias, fugiat possimus ipsum ducimus corporis
-                    dolorum est.
-                  </li>
+                    {
+                      product.benefits.map((benefit,index)=>(
+                        <li key={index} className="text-gray-600 text-lg text-body">
+                        {" "}
+                        {benefit}
+                      </li>
+                      ))
+                    }
+                  
+                  
                 </ul>
               </div>
-              <div className="flex flex-row gap-4">
-                <div className="size-16 bg-gray-200 rounded-xl"></div>
-                <div className="size-16 bg-gray-200 rounded-xl"></div>
-                <div className="size-16 bg-gray-200 rounded-xl"></div>
-              </div>
-              <div className="flex gap-4">
-                <Link
-                  href={`#`}
-                  className=" flex-1 flex gap-2 justify-center items-center px-5 h-12 bg-green-700 rounded-xl  hover:bg-green-800 transition-colors"
-                >
-                  <MessageCircle size={20} className="text-white" />
-                  <span className="text-base text-body text-white">
-                    Message us
-                  </span>
-                </Link>
-                <Link
-                  href={`#`}
-                  className=" flex-1 flex gap-2 justify-center items-center px-5 h-12 bg-gray-200 rounded-xl  hover:bg-gray-100 transition-colors"
-                >
-                  <Phone size={20} className="text-gray-600" />
-                  <span className="text-base text-body text-gray-600">
-                    Call us
-                  </span>
-                </Link>
-              </div>
+              
+             <div className="flex gap-4">
+  {/* WhatsApp Link */}
+  <Link
+    href="https://wa.me/2348000000000" // Replace with your number (no + or spaces)
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1 flex gap-2 justify-center items-center px-5 h-12 bg-green-700 rounded-xl hover:bg-green-800 transition-colors"
+  >
+    <MessageCircle size={20} className="text-white" />
+    <span className="text-base text-body text-white">
+      Message us
+    </span>
+  </Link>
+
+  {/* Phone Link */}
+  <Link
+    href="tel:+2348000000000" // Replace with your phone number
+    className="flex-1 flex gap-2 justify-center items-center px-5 h-12 bg-gray-200 rounded-xl hover:bg-gray-300 transition-colors"
+  >
+    <Phone size={20} className="text-gray-600" />
+    <span className="text-base text-body text-gray-600">
+      Call us
+    </span>
+  </Link>
+</div>
             </div>
           </div>
         </div>

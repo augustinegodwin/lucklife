@@ -5,7 +5,6 @@ import Products from "./components/Sections/products";
 import TextimonialSection from "./components/Sections/textimonialSection";
 import Gallery from "./components/Sections/gallery";
 import ContactUs from "./components/Sections/contactUs";
-import { Footer } from "./components/Sections/footer";
 export default function Home() {
   return (
     <main className="w-full flex flex-col items-center justify-between">

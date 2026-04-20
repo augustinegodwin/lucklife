@@ -4,7 +4,7 @@ import ContactGrid from '../contactGrid'
 
 export default function ContactUs() {
   return (
-    <section className='w-full flex justify-center pb-22.5'>
+    <section id={"#contact"} className='w-full flex justify-center pb-22.5'>
         <div className='flex max-w-180 lg:max-w-360 w-full flex-col px-5 md:px-10 gap-33'>   
             <SectionHeader
                 label='Contact  Us'

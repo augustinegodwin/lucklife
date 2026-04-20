@@ -33,7 +33,7 @@ const feautres=[
 ]
 export default function Value() {
   return (
-    <section className='w-full flex justify-center pb-22.5'>
+    <section id={"#values"} className='w-full flex justify-center pb-22.5'>
         <div className='flex max-w-180 lg:max-w-360 w-full flex-col px-4 md:px-10 gap-33'>
             <SectionHeader action='' label='values' title='Why people rely on
 lucklife for their wellbeing.' description='Discover top remote tech opportunities and land your next role with ease, through our streamlined process.'/>

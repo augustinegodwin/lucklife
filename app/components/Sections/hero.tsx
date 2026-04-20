@@ -26,7 +26,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="w-full p-[10px]">
-          <div className="bg-cover hero-img w-full border border-gray-100 h-125 rounded-[30px]">
+          <div className="bg-black hero-img w-full border border-gray-100 h-125 rounded-[30px]">
             {/* <Image              
               src={heroImage}
               alt="Hero Image"
