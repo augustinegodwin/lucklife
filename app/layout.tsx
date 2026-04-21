@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import localFont from 'next/font/local';
-import  Footer  from "./components/Sections/footer";
+import Footer  from "./components/Sections/footer";
 
 const recoleta = localFont({
   src: '../public/fonts/recoleta/Recoleta.otf', // Path is relative to the font file where the font loader is called

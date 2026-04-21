@@ -2,7 +2,6 @@ import { productsdata } from "@/data"
 import SectionHeader from "../components/sectionHeader"
 import Products from "../components/Sections/products"
 import ProductCard from "../components/productCard"
-import { Footer } from "../components/Sections/footer"
 
 export default function ProductsPage() {
   return (
