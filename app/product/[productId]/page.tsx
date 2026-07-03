@@ -8,28 +8,54 @@ type Props = {
 };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { productId } = await params;
-  const product:Product = productsdata.find((p: any) => p.id === productId);
+  
+  // Find the product safely
+  const product: Product = productsdata.find((p: any) => p.id === productId);
 
   if (!product) {
     return {
-      title: "Product Not Found",
+      title: "Product Not Found | Lucklife",
+      robots: { index: false }, // Don't let Google index a broken page link
     };
   }
 
+  // Clean and prepare values
+  const pageTitle = `${product.name} | Lucklife`;
+  const cleanDescription = product.description 
+    ? product.description.replace(/<[^>]*>/g, '').slice(0, 155) // Strips HTML tags if any exist
+    : `Discover ${product.name} at Lucklife. Premium lifestyle and wellness essentials designed for an elevated experience.`;
+  
+  // Resolve image source dynamically (handles static imports or straight URLs)
+  const imageUrl = typeof product.image === 'string' 
+    ? product.image 
+    : product.image?.src || '/background.png';
+
   return {
-    title: `${product.name} | Lucklife`,
-    description: product.description.slice(0, 160), // SEO best practice: ~160 chars
+    title: pageTitle,
+    description: cleanDescription,
+    alternates: {
+      canonical: `/product/${productId}`, // Solidifies the URL hierarchy for Google crawler
+    },
     openGraph: {
-      title: product.name,
-      description: product.category,
+      title: pageTitle,
+      description: cleanDescription, // Reused clean description for continuity
+      url: `https://www.lucklifeproducts.com/product/${productId}`,
+      siteName: "Lucklife",
+      type: "website", // Or "books"/"music" depending on product, "website" is safe standard
       images: [
         {
-          url: product.image.src, // Assuming 'image' is an imported static asset
-          width: 800,
-          height: 600,
-          alt: product.name,
+          url: imageUrl,
+          width: 1200, // 1200x630 is the professional gold standard aspect ratio for crisp cards
+          height: 630,
+          alt: `${product.name} - Premium Product Display`,
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: pageTitle,
+      description: cleanDescription,
+      images: [imageUrl],
     },
   };
 }

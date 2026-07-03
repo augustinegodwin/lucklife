@@ -26,13 +26,15 @@ export default function Hero() {
           </div>
         </div>
         <div className="w-full p-[10px]">
-          <div className="bg-black hero-img w-full border border-gray-100 h-125 rounded-[30px]">
-            {/* <Image              
-              src={heroImage}
+          <div className=" hero-img w-full border border-gray-100 h-125 rounded-[30px]">
+            <Image              
+              src={'/baackground.png'}
               alt="Hero Image"
               sizes="100vw"
+              width={100}
+              height={100}
               className="w-full  h-full object-cover rounded-[30px]"
-            /> */}
+            />
           </div>
         </div>
       </div>

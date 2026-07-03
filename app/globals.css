@@ -21,7 +21,7 @@
 }
 @font-face {
   font-family: body-font;
-  src: url(../public/fonts/recoleta/Recoleta.otf);
+  src: url(../public/fonts/static/BricolageGrotesque-Regular.ttf);
 }
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -36,7 +36,7 @@ body {
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 .txt-heading{
-  @apply  tracking-[-0.02em] leading-none text-black font-bold; 
+  @apply  tracking-[-0.07em] leading-none text-black; 
   font-family: body-font ;
 
 }
