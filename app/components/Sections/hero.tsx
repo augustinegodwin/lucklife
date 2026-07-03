@@ -10,8 +10,8 @@ export default function Hero() {
           {/* Left Column - Headline */}
           <div>
             <h1 className="txt-heading text-[40px] md:text-[64px]">
-              Promoting health,<br />
-              Preserving culture,<br />
+              Promoting health, <br />
+              Preserving culture, <br />
               Benefiting lifes.
             </h1>
           </div>
