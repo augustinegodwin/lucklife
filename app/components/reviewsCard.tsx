@@ -1,0 +1,21 @@
+interface Testimonial {
+  id: string
+  quote: string
+  author: string
+  role: string
+}
+export default function ReviewsCard({ testimonial }: { testimonial: Testimonial }) {
+  return (
+    <div key={testimonial.id} className="bg-gray-200 rounded-[20px] p-4 sm:p-5 flex flex-col">
+
+        {/* Quote */}
+        <p className="text-gray-600 flow text-base leading-relaxed mb-8 text-body flex-grow">{testimonial.quote}</p>
+
+        {/* Author Info */}
+        <div>
+          <p className=" text-gray-900 text-body text-base">{testimonial.author}</p>
+          <p className="text-gray-500 text-body text-[13px]">{testimonial.role}</p>
+        </div>
+      </div>
+  )
+}

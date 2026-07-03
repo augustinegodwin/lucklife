@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FCFCFC;
+  --foreground: #171717;
+  --accent:#f5f5f5;
+  --text-light:#999999;
+  
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground); 
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-recoleta: var(--font-recoleta);
+}
+@font-face {
+  font-family: flow-circular;
+  src: url(../app/assets/fonts/Pally-Medium.ttf);
+}
+@font-face {
+  font-family: body-font;
+  src: url(../public/fonts/static/BricolageGrotesque-Regular.ttf);
+}
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.txt-heading{
+  @apply  tracking-[-0.07em] leading-none text-black; 
+  font-family: body-font ;
+
+}
+.text-body {
+  @apply  tracking-[-0.04em] leading-[1.4] ; 
+  font-family:flow-circular;
+}
+.flow{
+  font-family: flow-circular;
+}
+@theme {
+  --breakpoint-md: 600px;   /* This is your min-width anchor */
+  --breakpoint-sm: 520px;   /* This is your min-width anchor */
+  --breakpoint-lg: 1024px;  /* This is your next min-width anchor */
+}
